@@ -1,0 +1,6 @@
+{
+  "name": "budducloud.com",
+  "dependencies": {
+    "buddycloud-styles": "buddycloud/buddycloud-styles",
+  }
+}

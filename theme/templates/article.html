@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+  <div class="container">
+      <section>
+        <div>
+          <div class="row">
+            <div class="col-md-10">
+              <!-- Content -->
+                <article class="box">
+                  <h2>{{ article.title }}</h2>
+                  <div class="author"><p>Written by: {{ article.author }}</p></div>
+                  <div class="date"><p>Date: {{ article.date|strftime('%m/%d/%Y') }}</p></div>
+                  {{ article.content }}
+                </article>
+                {% include 'disqus_script.html' %}
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+</div>
+{% endblock %}
